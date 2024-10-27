@@ -13,58 +13,32 @@ body{
     position: relative;
     background:black
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 0 12px rgb(113, 89, 113);
-    padding: 5px;
-}
+
 .logo{
-    padding: 1% 5%;
-    font-size: 15PX;
     color: pink;
-    /* animation-name: move;
-    animation-duration: 2s; */
 }
 
-/* @keyframes move {
-    from{
-        right: 0;
-   
-    }  
-    to{
-        left: 100%;
-    color: black; }  
-} */
-.navbar ul{
-    display: flex;
-    align-items: center;
-    gap: 20px;    
-}
-ul li a{
-    color: white;
-    font-size: 17px;
-    font-weight:500 ;
-    cursor: pointer;
+.linkk{
+    color: white !important;
+    font-size: 17px !important;
+    font-weight:500 !important;
+    cursor: pointer !important ;
     position: relative;
 }
-ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: pink;
-    position: absolute;
-    bottom: -6px;
-    left: 0;
+.linkk::after{
+    content: '' !important;
+    width:  0 !important;
+    height: 3px !important;
+    background: pink !important;
+    position: absolute !important;
+    bottom: 5px;
+    left: 5px;
     transition: 0.5s;
 }
-ul li a:hover::after{
-    width: 55px;
+.linkk:hover::after{
+    width: 60px !important;
 }
-header .button{
-    margin-right: 5%;
-}
+
 .btn{
     position: relative;
     outline: none;
@@ -81,31 +55,28 @@ header .button{
 .btn:hover{
     scale: 1.1;
     box-shadow: 0px 0px 30px pink;
+    color: pink;
+    
 }
-.header-text{
+.textt{
     color: white;
-    margin-top: 15%;
-    margin-left: 5%;
-    font-size: 30px;
+    font-size: 20px !important;
     /* font-family: 'Pacifico' !important; */
 }
-.header-text h1{
-    font-size: 60px;    
+.textt h1{
+    font-size: 50px;    
 }
-.header-text h1 span{
+.textt h1 span{
     color: pink;
-    font-size: 70px;
+    font-size: 60px;
+    font-weight: 600;
 }
-.image img{
-    border-radius: 20px;
-    display: flex;
-    position: relative;
-    outline: none;
-    padding: 2% 2%;
+.textt h1 span:hover{
+    color: palevioletred;
+}
+.img {
+    width: 70%;
+    border-radius: 100%;
+    padding: 2%;
     border: 4px solid pink;
-    border-radius: 15px;
-    margin-top: -20%;
-    margin-left: 60%;   
-    width: 30%;
-    
 }
