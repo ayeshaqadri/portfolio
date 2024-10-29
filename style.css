@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Stylish&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,27 +8,29 @@
     text-decoration: none;
     font-family: sans-serif;
 }
-body{
+
+body {
     height: 100vh;
     width: 100%;
     position: relative;
-    background:black
+    background: black
 }
 
-.logo{
+.logo {
     color: pink;
 }
 
-.linkk{
+.linkk {
     color: white !important;
     font-size: 17px !important;
-    font-weight:500 !important;
-    cursor: pointer !important ;
+    font-weight: 500 !important;
+    cursor: pointer !important;
     position: relative;
 }
-.linkk::after{
+
+.linkk::after {
     content: '' !important;
-    width:  0 !important;
+    width: 0 !important;
     height: 3px !important;
     background: pink !important;
     position: absolute !important;
@@ -35,11 +38,12 @@ body{
     left: 5px;
     transition: 0.5s;
 }
-.linkk:hover::after{
+
+.linkk:hover::after {
     width: 60px !important;
 }
 
-.btn{
+.btn {
     position: relative;
     outline: none;
     padding: 8% 3%;
@@ -52,61 +56,73 @@ body{
     cursor: pointer;
     transition: .4s;
 }
-.btn:hover{
+
+.btn:hover {
     scale: 1.1;
     box-shadow: 0px 0px 30px pink;
     color: pink;
-    
+
 }
-.textt{
+
+.textt {
     color: white;
     font-size: 20px !important;
     /* font-family: 'Pacifico' !important; */
 }
-.textt h1{
-    font-size: 50px;    
+
+.textt h1 {
+    font-size: 50px;
 }
-.textt h1 span{
+
+.textt h1 span {
     color: pink;
     font-size: 60px;
     font-weight: 600;
 }
-.textt h1 span:hover{
+
+.textt h1 span:hover {
     color: palevioletred;
 }
+
 .img {
     width: 70%;
     border-radius: 100%;
     padding: 2%;
     border: 4px solid pink;
 }
+
 .img-2 {
     width: 15%;
     border-radius: 100%;
     padding: 1%;
     border: 4px solid pink;
 }
-.text-2{
+
+.text-2 {
     font-size: 40px;
     color: pink;
     font-weight: 900;
 
 }
-.text-2 p{
+
+.text-2 p {
     color: rgb(242, 229, 247);
 }
-.txt-1{
+
+.txt-1 {
     color: pink;
     font-size: 25px;
     font-weight: 800
-} 
-.skills{
+}
+
+.skills {
     flex: 0 0 40%;
     max-width: 100%;
     margin-top: 60px;
 
 }
-.skills h5{
+
+.skills h5 {
     line-height: 20px;
     font-weight: 600;
     font-size: 16px;
@@ -114,18 +130,20 @@ body{
     text-transform: capitalize;
 
 }
-.percent{
+
+.percent {
     background: rgb(71, 71, 71);
     height: 7px;
     border-radius: 4px;
     width: 100%;
     position: relative;
-} 
-.skills{
-    margin-bottom:40px;
-    margin-top:100px;
 }
-.percent-in{
+
+.skills {
+    margin-bottom: 40px;
+}
+
+.percent-in {
     position: absolute;
     left: 0;
     top: 0;
@@ -134,9 +152,38 @@ body{
     background: pink;
 
 }
-.percent{
+
+.percent {
     right: 0;
     color: pink;
     font-weight: 400;
     line-height: 50px;
 }
+
+.lin {
+    content: '';
+    background: pink;
+    color: pink;
+    position: block;
+    line-height: 4%;
+}
+.lin-2{
+    line-height: 4%;
+    width: 100%;
+}
+.p-img{
+    width: 25%;
+    left: 10%;
+    position: relative;
+}
+.p-img-1 {
+    width: 100%;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), pink) !important; /* Corrected */
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* overflow: hidden; */
+}
+/* img ek ke uppar ek karke arahi hai  */
