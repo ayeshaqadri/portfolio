@@ -13,7 +13,15 @@ body {
     height: 100vh;
     width: 100%;
     position: relative;
-    background: black
+    background: black;
+}
+
+#header {
+    width: 100%;
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -43,7 +51,7 @@ body {
     width: 60px !important;
 }
 
-.btn {
+.btnn {
     position: relative;
     outline: none;
     padding: 8% 3%;
@@ -57,17 +65,23 @@ body {
     transition: .4s;
 }
 
-.btn:hover {
+.btnn:hover {
     scale: 1.1;
     box-shadow: 0px 0px 30px pink;
     color: pink;
+}
 
+.home {
+    padding: 12% 0% 0% 0%;
+}
+
+#projects1 {
+    padding-top: 4rem;
 }
 
 .textt {
     color: white;
     font-size: 20px !important;
-    /* font-family: 'Pacifico' !important; */
 }
 
 .textt h1 {
@@ -91,6 +105,10 @@ body {
     border: 4px solid pink;
 }
 
+.about {
+    padding: 8% 0% 0% 0%;
+}
+
 .img-2 {
     width: 15%;
     border-radius: 100%;
@@ -102,7 +120,6 @@ body {
     font-size: 40px;
     color: pink;
     font-weight: 900;
-
 }
 
 .text-2 p {
@@ -112,14 +129,13 @@ body {
 .txt-1 {
     color: pink;
     font-size: 25px;
-    font-weight: 800
+    font-weight: 800;
 }
 
 .skills {
     flex: 0 0 40%;
     max-width: 100%;
     margin-top: 60px;
-
 }
 
 .skills h5 {
@@ -128,7 +144,6 @@ body {
     font-size: 16px;
     color: pink;
     text-transform: capitalize;
-
 }
 
 .percent {
@@ -150,7 +165,6 @@ body {
     height: 100%;
     border-radius: 4px;
     background: pink;
-
 }
 
 .percent {
@@ -160,30 +174,259 @@ body {
     line-height: 50px;
 }
 
+.p-hea {
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
 .lin {
     content: '';
     background: pink;
-    color: pink;
+    color: rgb(0, 0, 0);
     position: block;
-    line-height: 4%;
+    line-height: 3%;
 }
-.lin-2{
+
+.lin-2 {
     line-height: 4%;
     width: 100%;
 }
-.p-img{
-    width: 25%;
-    left: 10%;
+
+#scrol-icon {
+    width: 30px;
+    height: 15px;
+}
+
+.movie-container-wrapper {
+    margin-left: 20%;
+    position: relative;
+    width: 60%;
+    /* Adjust as needed */
+}
+
+.movie-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* Enable smooth scrolling */
+}
+
+.scrol-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: pink;
+    color: #fff;
+    border: none;
+    height: 90px;
+    width: 30px;
+    border-radius: 20%;
+    z-index: 1;
+    /* Keep on top of movie cards */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrol-btn:hover {
+    scale: 1.1;
+    box-shadow: 10px 10px 50px pink;
+    color: rgb(240, 240, 240);
+}
+
+#leftBtn1 {
+    left: 50px;
+
+}
+
+#rightBtn1 {
+    right: -50px;
+}
+
+#rightBtn2 {
+    right: -50px;
+}
+
+.movie-container {
+    display: flex;
+    gap: 35px;
+    padding: 20px;
+    overflow-x: scroll;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    margin-left: 5em;
+}
+
+.movie-container div {
+    flex: none;
+}
+
+.movie-container::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-card {
     position: relative;
 }
-.p-img-1 {
-    width: 100%;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.6), pink) !important; /* Corrected */
+.movie-card img {
     border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    /* overflow: hidden; */
+    transition: transform 0.5s;
 }
-/* img ek ke uppar ek karke arahi hai  */
+
+.movie-card img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#forfour {
+    width: 200px;
+    height: 90%;
+}
+
+.my-footer {
+    color: pink;
+    background: black;
+}
+
+/* Hide menu on small screens */
+#navbarNav {
+    display: none;
+}
+
+.navbar-toggler {
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Show menu when active on small screens */
+#navbarNav.active {
+    display: block;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    #forfour {
+        width: 150px;
+        height: 80%;
+    }
+
+    .textt h1 {
+        font-size: 36px;
+    }
+
+    .textt h1 span {
+        font-size: 48px;
+    }
+
+    .img {
+        width: 60%;
+        margin-left: 50%;
+        margin-top: 23%;
+    }
+
+    .img-2 {
+        width: 30%;
+    }
+
+    .btnn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .skills h5 {
+        font-size: 14px;
+    }
+
+    .p-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p-img-1 img {
+        width: 60%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .im-2,
+    .im-3 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .textt {
+        align-items: center;
+        text-align: center;
+    }
+
+    .textt h1 {
+        font-size: 30px;
+    }
+
+    .textt h1 span {
+        font-size: 40px;
+    }
+
+    .home {
+        padding-top: 12%;
+        padding-right: 20%;
+    }
+
+    .img {
+        width: 60%;
+    }
+
+    .btnn {
+        width: 100px;
+        padding: 5% 2%;
+        font-size: 14px;
+    }
+
+    .about {
+        padding-top: 10%;
+    }
+
+    .skills {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .skills h5 {
+        font-size: 12px;
+    }
+
+    .p-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p-img-1 img {
+        width: 90%;
+        height: auto;
+    }
+
+    .im-2,
+    .im-3 {
+        width: 60%;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    #navbarNav {
+        display: flex !important;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+}
