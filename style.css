@@ -85,7 +85,7 @@ body {
 }
 
 .textt h1 {
-    font-size: 50px;
+    font-size: 3rem; /* Instead of 50px */
 }
 
 .textt h1 span {
@@ -196,7 +196,9 @@ body {
     width: 30px;
     height: 15px;
 }
-
+.animate__animated {
+    will-change: transform, opacity;
+}
 .movie-container-wrapper {
     margin-left: 20%;
     position: relative;
@@ -210,7 +212,19 @@ body {
     scroll-behavior: smooth;
     /* Enable smooth scrolling */
 }
+.movie-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
 
+.movie-container::-webkit-scrollbar-thumb {
+    background: pink;
+    border-radius: 4px;
+}
+
+.movie-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
 .scrol-btn {
     position: absolute;
     top: 50%;
@@ -272,7 +286,7 @@ body {
 
 .movie-card img {
     border-radius: 10px;
-    transition: transform 0.5s;
+    transition: transform 0.3s ease-in-out;
 }
 
 .movie-card img:hover {

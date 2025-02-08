@@ -5,7 +5,12 @@ let type = new Typed(".txt-1", {
     backDelay: 1000,
     loop: true
 });
-
+const images = document.querySelectorAll("img");
+images.forEach(img => {
+    img.onerror = () => {
+        img.src = "path/to/fallback-image.png";
+    };
+});
 // for navbar
 function toggleMenu() {
     const navbarNav = document.getElementById("navbarNav");
@@ -58,3 +63,34 @@ leftBtn2.addEventListener("click", () => {
         scrollContainer2.scrollLeft -= 500;
     }
 });
+function setupScrolling(containerId, rightBtnId, leftBtnId) {
+    const scrollContainer = document.getElementById(containerId);
+    const rightBtn = document.getElementById(rightBtnId);
+    const leftBtn = document.getElementById(leftBtnId);
+
+    const scrollAmount = window.innerWidth <= 768 ? 200 : 500;
+
+    rightBtn.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += scrollAmount;
+    });
+
+    leftBtn.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= scrollAmount;
+    });
+}
+
+setupScrolling("movie-container1", "rightBtn1", "leftBtn1");
+setupScrolling("movie-container2", "rightBtn2", "leftBtn2");
+function debounce(func, wait) {
+    let timeout;
+    return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+}
+
+window.addEventListener("scroll", debounce(() => {
+    console.log("Scrolling...");
+}, 100));

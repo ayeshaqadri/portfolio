@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+  <meta name="description" content="Ayesha Qadri's Portfolio - Web and App Developer">
+  <meta name="keywords" content="web developer, app developer, portfolio, Ayesha Qadri">
+  <meta name="author" content="Ayesha Qadri">
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MY-PORTFOLIO</title>
@@ -14,6 +19,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="images/girl.webp" type="image/x-icon">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="icon" href="images/girl.webp" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -54,8 +60,8 @@
   <div class="container col-xxl-10 home" id="home">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6 ">
-        <img src="images/girl.webp" class="animate__animated animate__rotateIn d-block mx-lg-auto img-fluid img"
-          alt="Bootstrap Themes" width="700">
+        <img src="images/girl.webp" class="animate__animated animate__rotateIn d-block mx-lg-auto img-fluid  img "
+          alt="Bootstrap Themes"  loading="lazy" width="700">
       </div>
       <div class="col-lg-6 textt">
         <h1 class="animate__animated animate__backInDown display-4 lh-1 mb-3">Hi, I'm <span>AYESHA QADRI</span> <br />
@@ -140,8 +146,10 @@
     <h4 class="text-2">css</h4>
   </div>
   <div class="movie-container-wrapper">
-    <button id="rightBtn1" class="scrol-btn"><i class="fa-solid fa-angle-right" id="scrol-icon"></i></button>
-    <div class="movie-container" id="movie-container1">
+    <button id="rightBtn1" class="scrol-btn" aria-label="Scroll right">
+      <i class="fa-solid fa-angle-right" id="scrol-icon"></i>
+  </button>
+      <div class="movie-container" id="movie-container1">
 
       <div class="movie-card">
         <a href="https://ayeshaqadri.github.io/figma-project-2/"><img src="images/1.png" id="forfour" alt="Movie 1"></a>
@@ -175,7 +183,10 @@
             id="forfour" alt="Movie 1"></a>
       </div>
     </div>
-    <button id="leftBtn1" class="scrol-btn"><i class="fa-solid fa-angle-left" id="scrol-icon"></i></button>
+    <button id="leftBtn1" class="scrol-btn" aria-label="Scroll right">
+      <i class="fa-solid fa-angle-right" id="scrol-icon"></i>
+  </button>
+    <!-- <button id="leftBtn1" class="scrol-btn"><i class="fa-solid fa-angle-left" id="scrol-icon"></i></button> -->
   </div>
   <!-- 4 sec end -->
 
